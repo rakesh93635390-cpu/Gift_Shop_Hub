@@ -23,6 +23,13 @@ const ShopSchema=new mongoose.Schema({
     shopOwner:{
         type:mongoose.Schema.Types.ObjectId,
         ref : "User"
+    },
+    shopLocation:{
+        type:String
+    },
+    shopStatus:{
+        type:String,
+        default:"pending"
     }
 })
 

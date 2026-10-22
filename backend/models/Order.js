@@ -25,6 +25,29 @@ const OrderSchema = new mongoose.Schema({
         type:String,
         default:"pending"
     },
+
+    customerAddress: {
+    name: {
+        type: String
+    },
+    phone: {
+        type: String
+    },
+    address: {
+        type: String
+    },
+    city: {
+        type: String
+    },
+    
+    state:{
+        type:String
+    },
+    
+    pincode: {
+        type: String
+    }
+}
 })
 
 module.exports=mongoose.model("Order",OrderSchema)
